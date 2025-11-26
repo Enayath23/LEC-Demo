@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Checker App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="App">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title" data-testid="hero-title">
+                    Loan eligibility Checker App
+                </h1>
+                <p class="hero-subtitle" data-testid="hero-subtitle">
+                    Check Eligibility • Improve Credit Score • Apply for Loans
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" data-testid="try-demo-btn" onclick="scrollToSection('demo')">
+                        Try Demo
+                    </button>
+                    <button class="btn-secondary" data-testid="learn-more-btn" onclick="scrollToSection('solution')">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="problem-section" id="problem">
+            <div class="container">
+                <h2 class="section-title" data-testid="problem-title">The Problem We're Solving</h2>
+                <p class="section-description">
+                    Many people struggle to understand their loan eligibility, credit score, and required documentation. 
+                    Traditional loan agents charge high fees and take considerable time to process applications. 
+                    The complexity of choosing the right bank or NBFC for their profile adds further confusion.
+                </p>
+                <p class="highlight-text">
+                    Navigating the loan landscape shouldn't be this difficult. Users deserve transparency, speed, and simplicity when seeking financial assistance.
+                </p>
+                
+                <div class="problem-cards">
+                    <div class="problem-card">
+                        <div class="problem-card-content">
+                            <i data-lucide="file-text" class="problem-icon"></i>
+                            <h3>Loan Eligibility</h3>
+                            <p>Unclear criteria and requirements</p>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-card-content">
+                            <i data-lucide="trending-up" class="problem-icon"></i>
+                            <h3>Credit Score</h3>
+                            <p>Limited understanding and access</p>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-card-content">
+                            <i data-lucide="dollar-sign" class="problem-icon"></i>
+                            <h3>High Fees</h3>
+                            <p>Expensive agent charges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution-section" id="solution">
+            <div class="container">
+                <h2 class="section-title" data-testid="solution-title">Our Solution: All Loan Services in One App</h2>
+                
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <div class="solution-card-content">
+                            <i data-lucide="check-circle" class="solution-icon"></i>
+                            <h3>Check Loan Eligibility</h3>
+                            <p>Get instant eligibility results in minutes with our AI-powered assessment system. No more waiting or uncertainty.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="solution-card-content">
+                            <i data-lucide="trending-up" class="solution-icon"></i>
+                            <h3>View & Improve Credit Score</h3>
+                            <p>Access your CIBIL score instantly and receive personalised tips to improve your creditworthiness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="solution-card-content">
+                            <i data-lucide="upload" class="solution-icon"></i>
+                            <h3>Manage Documents</h3>
+                            <p>Upload and securely store all required documents in one place with cloud-based protection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="solution-card-content">
+                            <i data-lucide="zap" class="solution-icon"></i>
+                            <h3>Get Instant Offers</h3>
+                            <p>Receive loan offers from multiple banks and NBFCs instantly, tailored to your profile.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="solution-card-content">
+                            <i data-lucide="file-text" class="solution-icon"></i>
+                            <h3>Apply Online Directly</h3>
+                            <p>Complete your loan application directly through the app with guided, streamlined processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Journey Section -->
+        <section class="journey-section">
+            <div class="container">
+                <h2 class="section-title" data-testid="journey-title">Seamless User Journey</h2>
+                <p class="section-description">
+                    From registration to loan approval, we've designed every step to be intuitive and efficient. 
+                    Our app guides users through a simple, secure process that puts them in control of their financial future.
+                </p>
+                
+                <div class="journey-grid">
+                    <div class="journey-card">
+                        <div class="journey-icon-wrapper">
+                            <i data-lucide="shield" class="journey-icon"></i>
+                        </div>
+                        <h3>Simple Registration</h3>
+                        <p>Mobile OTP login with robust security</p>
+                    </div>
+                    
+                    <div class="journey-card">
+                        <div class="journey-icon-wrapper">
+                            <i data-lucide="check-circle" class="journey-icon"></i>
+                        </div>
+                        <h3>Quick Onboarding</h3>
+                        <p>User-friendly intro slider</p>
+                    </div>
+                    
+                    <div class="journey-card">
+                        <div class="journey-icon-wrapper">
+                            <i data-lucide="bar-chart-3" class="journey-icon"></i>
+                        </div>
+                        <h3>Smart Dashboard</h3>
+                        <p>All features at your fingertips</p>
+                    </div>
+                    
+                    <div class="journey-card">
+                        <div class="journey-icon-wrapper">
+                            <i data-lucide="zap" class="journey-icon"></i>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>AI-powered eligibility assessment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligibility Check Section -->
+        <section class="eligibility-section" id="demo">
+            <div class="container">
+                <h2 class="section-title">Intelligent Loan Eligibility Check</h2>
+                <h3 class="section-subtitle">Instant Results with AI-Powered Assessment</h3>
+                
+                <div class="eligibility-content">
+                    <div class="eligibility-description">
+                        <p>
+                            Users simply select their loan type and enter basic details such as salary and job type. 
+                            Our advanced AI system processes this information instantly to provide accurate eligibility results.
+                        </p>
+                        <p>
+                            The system displays the percentage chance of loan approval, eliminating guesswork and manual checking. 
+                            This transparency empowers users to make informed decisions about their loan applications.
+                        </p>
+                        
+                        <ul class="feature-list">
+                            <li><i data-lucide="check" class="check-icon"></i> Select loan type (personal, home, vehicle, business)</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Enter basic financial details</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Receive instant eligibility percentage</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Get personalised recommendations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="eligibility-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h4>Choose Loan Type</h4>
+                            <p>Select from multiple options</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="step-arrow"></i>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h4>Enter Details</h4>
+                            <p>Quick form completion</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="step-arrow"></i>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h4>Get Results</h4>
+                            <p>Instant approval chances</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credit Score Section -->
+        <section class="credit-section">
+            <div class="container">
+                <h2 class="section-title">Credit Score Monitoring & Improvement</h2>
+                
+                <div class="credit-grid">
+                    <div class="credit-card">
+                        <div class="credit-card-content">
+                            <i data-lucide="bar-chart-3" class="credit-icon"></i>
+                            <h3>Current CIBIL Score</h3>
+                            <p>View your credit score instantly with real-time updates and historical tracking.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="credit-card">
+                        <div class="credit-card-content">
+                            <i data-lucide="target" class="credit-icon"></i>
+                            <h3>Score Indicator</h3>
+                            <p>Colour-coded system shows Good, Average, or Poor status at a glance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="credit-card">
+                        <div class="credit-card-content">
+                            <i data-lucide="trending-up" class="credit-icon"></i>
+                            <h3>Improvement Tips</h3>
+                            <p>Receive personalised recommendations to boost your creditworthiness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="credit-card">
+                        <div class="credit-card-content">
+                            <i data-lucide="award" class="credit-icon"></i>
+                            <h3>Expert Guidance</h3>
+                            <p>Access professional advice to optimise your credit profile effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Document Management Section -->
+        <section class="document-section">
+            <div class="container">
+                <div class="document-content">
+                    <div class="document-text">
+                        <h2 class="section-title">Secure Document Management</h2>
+                        <h3 class="section-subtitle">Upload & Store Documents Safely</h3>
+                        <p>
+                            Our secure cloud storage system allows users to upload and manage all required loan documents 
+                            in one centralised location. The platform accepts Aadhaar Card, PAN Card, bank statements, and salary slips.
+                        </p>
+                        <p>
+                            Each document displays a clear status indicator showing whether it's uploaded or pending. 
+                            All files are protected with enterprise-grade encryption, ensuring complete data security and privacy.
+                        </p>
+                        
+                        <div class="document-types">
+                            <div class="doc-badge"><i data-lucide="credit-card" style="width: 18px; height: 18px;"></i> Aadhaar & PAN Card</div>
+                            <div class="doc-badge"><i data-lucide="file-text" style="width: 18px; height: 18px;"></i> Bank Statement</div>
+                            <div class="doc-badge"><i data-lucide="file-text" style="width: 18px; height: 18px;"></i> Salary Slip</div>
+                            <div class="doc-badge"><i data-lucide="shield" style="width: 18px; height: 18px;"></i> Secure Storage</div>
+                        </div>
+                    </div>
+                    
+                    <div class="document-visual">
+                        <div class="document-mockup">
+                            <i data-lucide="upload" class="upload-icon"></i>
+                            <p>Upload Documents</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compare Offers Section -->
+        <section class="offers-section">
+            <div class="container">
+                <h2 class="section-title">Compare Loan Offers & Apply Instantly</h2>
+                <p class="section-description">
+                    Our AI system analyses your profile and presents the best loan offers from multiple banks and NBFCs. 
+                    Users can compare interest rates, EMI amounts, and terms side-by-side with complete transparency.
+                </p>
+                
+                <div class="offers-steps">
+                    <div class="offer-step">
+                        <div class="offer-step-number">1</div>
+                        <h4>AI Matching</h4>
+                        <p>System finds best offers for your profile</p>
+                    </div>
+                    <div class="offer-step">
+                        <div class="offer-step-number">2</div>
+                        <h4>EMI Calculator</h4>
+                        <p>Calculate monthly payments instantly</p>
+                    </div>
+                    <div class="offer-step">
+                        <div class="offer-step-number">3</div>
+                        <h4>Compare Plans</h4>
+                        <p>Review multiple options side-by-side</p>
+                    </div>
+                    <div class="offer-step">
+                        <div class="offer-step-number">4</div>
+                        <h4>Apply Now</h4>
+                        <p>One-click application submission</p>
+                    </div>
+                    <div class="offer-step">
+                        <div class="offer-step-number">5</div>
+                        <h4>Track Status</h4>
+                        <p>Monitor application progress</p>
+                    </div>
+                </div>
+                
+                <p class="offers-footer">
+                    The guided application process auto-fills data from your profile, making submission quick and effortless. 
+                    Track your loan status in real-time from submission to approval.
+                </p>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Key Benefits & Business Model</h2>
+                <h3 class="section-subtitle">Why Choose Loan Checker App</h3>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i data-lucide="zap" class="benefit-icon"></i>
+                        <h4>Fast Approval Chances</h4>
+                        <p>Instant eligibility assessment saves time</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i data-lucide="trending-up" class="benefit-icon"></i>
+                        <h4>Credit Score Improvement</h4>
+                        <p>Tools and tips to boost creditworthiness</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i data-lucide="file-text" class="benefit-icon"></i>
+                        <h4>Easy Document Management</h4>
+                        <p>Secure cloud storage for all files</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i data-lucide="shield" class="benefit-icon"></i>
+                        <h4>Trusted & Secure</h4>
+                        <p>Enterprise-grade data protection</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i data-lucide="clock" class="benefit-icon"></i>
+                        <h4>Saves Time & Money</h4>
+                        <p>No agent fees or lengthy processes</p>
+                    </div>
+                </div>
+                
+                <h3 class="section-subtitle revenue-title">Revenue Streams</h3>
+                <div class="revenue-grid">
+                    <div class="revenue-card">
+                        <i data-lucide="dollar-sign" class="revenue-icon"></i>
+                        <h4>Bank Commissions</h4>
+                        <p>Earnings from successful loan referrals</p>
+                    </div>
+                    <div class="revenue-card">
+                        <i data-lucide="star" class="revenue-icon"></i>
+                        <h4>Premium Reports</h4>
+                        <p>Advanced credit score analysis</p>
+                    </div>
+                    <div class="revenue-card">
+                        <i data-lucide="users" class="revenue-icon"></i>
+                        <h4>NBFC Partnerships</h4>
+                        <p>Strategic financial institution collaborations</p>
+                    </div>
+                    <div class="revenue-card">
+                        <i data-lucide="award" class="revenue-icon"></i>
+                        <h4>Agent Subscriptions</h4>
+                        <p>Professional tools for loan agents</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section class="roadmap-section">
+            <div class="container">
+                <h2 class="section-title">Future Roadmap & Innovation</h2>
+                <p class="section-description">
+                    We're committed to continuous innovation and expanding our platform's capabilities. 
+                    Our upcoming features will further enhance the user experience and provide comprehensive financial management tools.
+                </p>
+                
+                <div class="roadmap-grid">
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-content">
+                            <i data-lucide="bell" class="roadmap-icon"></i>
+                            <h4>EMI Reminders</h4>
+                            <p>Automated payment notifications to ensure timely EMI payments</p>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-content">
+                            <i data-lucide="wallet" class="roadmap-icon"></i>
+                            <h4>Expense Tracker</h4>
+                            <p>Comprehensive spending analysis and budget management tools</p>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-content">
+                            <i data-lucide="brain" class="roadmap-icon"></i>
+                            <h4>AI Credit Booster</h4>
+                            <p>Advanced algorithms to optimise and improve credit scores</p>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-content">
+                            <i data-lucide="scale" class="roadmap-icon"></i>
+                            <h4>Legal Loan Support</h4>
+                            <p>Expert legal guidance for loan-related queries and disputes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-card">
+                        <div class="roadmap-card-content">
+                            <i data-lucide="briefcase" class="roadmap-icon"></i>
+                            <h4>Business Loan Section</h4>
+                            <p>Dedicated platform for business and commercial loan applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer/CTA Section -->
+        <section class="footer-section">
+            <div class="container">
+                <h2 class="footer-title">Thank You!</h2>
+                <p class="footer-description">
+                    Ready to transform your loan application experience? Try our demo today and discover how easy financial services can be.
+                </p>
+                <div class="footer-buttons">
+                    <button class="btn-primary" data-testid="footer-demo-btn" onclick="scrollToSection('demo')">
+                        Try Demo Now
+                    </button>
+                    <button class="btn-secondary" data-testid="contact-btn">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
